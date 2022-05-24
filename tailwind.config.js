@@ -13,16 +13,16 @@ module.exports = {
             ...colors,
         },
         screens: {
-            'sm': '1024px',
-            // => @media (min-width: 640px) { ... }
+            'sm': '576px',
+            // => @media (min-width: 576px) { ... }
 
             'md': '1440px',
-            // => @media (min-width: 768px) { ... }
+            // => @media (min-width: 960px) { ... }
 
-            'lg': '1512px',
-            // => @media (min-width: 1024px) { ... }
+            'lg': '1536px',
+            // => @media (min-width: 1440px) { ... }
 
-            'xl': '1728',
+            'xl': '1881px',
             // => @media (min-width: 1280px) { ... }
 
             // '2xl': '1536px',
@@ -109,47 +109,5 @@ module.exports = {
         'tailwindcss/nesting',
         'tailwindcss',
         'autoprefixer',
-        // plugin(function({ addComponents, theme }) {
-        //     const screens = theme("screens", {});
-        //     addComponents([{
-        //             ".container": { width: "100%" },
-        //         },
-        //         {
-        //             [`@media (min-width: ${screens.sm})`]: {
-        //                 ".container": {
-        //                     "max-width": "640px",
-        //                 },
-        //             },
-        //         },
-        //         {
-        //             [`@media (min-width: ${screens.md})`]: {
-        //                 ".container": {
-        //                     "max-width": "768px",
-        //                 },
-        //             },
-        //         },
-        //         {
-        //             [`@media (min-width: ${screens.lg})`]: {
-        //                 ".container": {
-        //                     "max-width": "1024px",
-        //                 },
-        //             },
-        //         },
-        //         {
-        //             [`@media (min-width: ${screens.xl})`]: {
-        //                 ".container": {
-        //                     "max-width": "1280px",
-        //                 },
-        //             },
-        //         },
-        //         {
-        //             [`@media (min-width: ${screens["2xl"]})`]: {
-        //                 ".container": {
-        //                     "max-width": "1280px",
-        //                 },
-        //             },
-        //         },
-        //     ]);
-        // }),
     ],
 }
